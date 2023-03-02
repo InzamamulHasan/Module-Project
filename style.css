@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+html{
+    background-color: #FCFDFD;
+}
+.nav-container{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 5px 5px 686b78;
+    padding: 10px;
+    font-size:medium;
+    position:fixed;
+    left:0;
+    right: 0;
+    z-index: 10;
+}
+.right-half>span:hover{
+  
+    border-bottom: .1px solid gray;
+    cursor: pointer;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 13px;
+    
+ 
+  
+}
+.nav-container span{
+    font-weight: 300;
+    color: #686b78;
+   
+    
+}
+.nav-container
+.anchor{
+    color: black;
+}
+.nav-container .anchor:hover{
+    color: red;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-family: 'Mulish', sans-serif;
+}
+.right>div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.logo{
+    width: 60px;
+}
+.nav-container1{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 225, 225);
+}
+.container{
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    top:100px;
+}
+.nav-container1>.right-half{
+    display: flex;
+    justify-content: space-evenly;
+    gap:30px;
+    font-weight: 300;
+    color: #686b78;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+.nav-container1>.right-half span{
+    padding-bottom: 14px;
+}
+
+/* card story*/
+.card{
+   width: 220px;
+   height: 320px;
+   padding: 20px;
+   position: relative;
+}
+.card-image{
+
+    width: 220px;
+}
+.card p{
+    margin: 5px 0;
+  font-weight: 100 !important;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  .1px solid grey;
+    font-size: 10px;
+    padding: 10px 0px 10px 0px;
+  
+}
+.icon{
+    display: flex;
+    background-color: #db7c38;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+    color: white;
+    padding-left: 2px;
+    padding-right: 7px;
+}
+.star{
+    font-size: small !important;
+}
+.bullet{
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+}
+.sell{
+    font-size: 12px !important;
+    color:#8a584b;
+}
+.item{
+    background-color: #48c479;
+}
+.offer-container{
+    display: flex;
+    padding:10px 0;
+    font-size: 14px;
+    align-items: center;
+    gap:10px;
+    color:#8a584b ;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap:10px;
+    margin-top: 70px;
+   
+}.card:hover{
+    outline: .5px solid grey;
+}
+.card::before{
+    content: "PROMOTED";
+    display: block;
+    position: absolute;
+    top:20px;
+    background-color: rgb(58, 53, 53);
+    color: white;
+    left: 12px;
+}
+.btn{
+    width: 100%;
+    display: block;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    color: blue;
+    margin: auto;
+    padding-top:10px;
+    visibility: hidden;
+    border-top:1px solid gray;
+}
+.card:hover .btn{
+    visibility: visible;
+}
+.footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 100px;
+    margin-top: 110px;
+     
+}
+.footer h5{
+    color: #808080;
+    padding-top: 20px;
+
+}
+.footer>div{
+    display: flex;
+    flex-flow: column wrap;
+
+    gap:17px;
+}
+.footer>div>a{
+    color:white;
+    text-decoration: none;
+
+}
+.footer img{
+    width: 160px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+.footer img:hover{
+    width: 170px;
+    cursor: pointer;
+}
+.store-container{
+     align-items: center;
+     justify-content: center;
+}
+.footer a{
+    font-size: 14px;
+}
+.footer a:hover{
+    font-weight: bolder;
+}
+ 
+@media(max-width:800px){
+    .card-container{
+        grid-template-columns:repeat(2 ,auto)
+    }
+    .footer{
+        grid-template-columns:repeat(2 ,auto)
+    }
+    
+}
+@media(max-width:600px){
+    .card-container{
+        grid-template-columns:repeat(1 ,auto);
+        justify-content:center;
+    }
+    .footer{
+        grid-template-columns:repeat(1 ,auto);
+        gap:20px;
+    }
+    
+}
+
